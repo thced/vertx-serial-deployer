@@ -1,0 +1,28 @@
+= Serial Verticle deployment
+
+image:https://img.shields.io/badge/vert.x-4.0.2-purple.svg[link="https://vertx.io"]
+
+Shows one really simple solution to deploying a list of Verticles in a serial fashion.
+
+CompositeFuture deploys in parallel, this solution also takes a list of Verticles, but deploys
+in serial way.
+
+== Building
+
+To launch your tests:
+```
+./mvnw clean test
+```
+
+To package your application:
+```
+./mvnw clean package
+```
+
+To run your application:
+
+Run via IDEA launcher `Launcher` in project, or..
+
+```
+./mvnw clean compile exec:java
+```
